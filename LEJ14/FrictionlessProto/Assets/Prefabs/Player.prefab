@@ -160,9 +160,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -184,7 +184,9 @@ MonoBehaviour:
   highFriction: {fileID: 6200000, guid: 07ef43adb31fd7d42a16a037d90a7ce3, type: 2}
   speed: 150
   maxHorizVel: 12
-  minHorizVel: 2
+  minHorizVel: 0.5
+  LFAccelMult: 0.15
+  LFMaxVelMult: 2
   collider: {fileID: 2594696055347800323}
   rb: {fileID: 2594696055347800327}
   renderer: {fileID: 2594696055347800322}
@@ -192,6 +194,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  wallJumpLayer:
+    serializedVersion: 2
+    m_Bits: 128
   jumpForce: 600
 --- !u!58 &2594696055347800323
 CircleCollider2D:

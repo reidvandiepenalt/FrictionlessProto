@@ -27,7 +27,7 @@
                     "id": "aba52759-fadd-4e8b-b5f3-47e74b517746",
                     "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": "Hold,Press(behavior=2)"
                 }
             ],
             "bindings": [
@@ -44,9 +44,42 @@
                 },
                 {
                     "name": "",
-                    "id": "c9172f5e-aced-431c-9584-0ab094950598",
+                    "id": "268f09e7-1376-42df-b8b6-421c51f43f9a",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c9172f5e-aced-431c-9584-0ab094950598",
+                    "path": "<Keyboard>/e",
                     "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapFriction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "461f225d-1285-4186-a530-f51b8a052ec5",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapFriction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a6697e2-8df3-44ed-a8c7-422f168bce47",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "SwapFriction",
@@ -57,7 +90,7 @@
                     "name": "1D Axis",
                     "id": "f73c85d2-68dd-4917-a84e-477a833b7f1b",
                     "path": "1DAxis",
-                    "interactions": "",
+                    "interactions": "Hold,Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
@@ -85,6 +118,66 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "b1ac8b18-0884-4ddd-8b32-53fe82d3b479",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b0dbf010-edd9-4dc1-8a6a-38f9a4af1452",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "a0b36b9a-b39b-4cd2-a980-f311e8512ee9",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "TextDismiss",
+            "id": "aee8de8a-c35e-48a6-9e60-13c2bd7776b0",
+            "actions": [
+                {
+                    "name": "Dismiss",
+                    "type": "Button",
+                    "id": "2d243118-ba82-4238-89bf-83be32445275",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "533665c4-6b8d-48de-9ac3-bf89c2dbe1b9",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dismiss",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
